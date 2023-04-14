@@ -14,10 +14,12 @@ import androidx.room.ForeignKey
             onDelete = ForeignKey.CASCADE
         )
     ]
-data class Learning_Session(
-    @PrimaryKey(autoGenerate = true) val session_id: Int,
-    val user_id: Int,
-    val start_time: Long,
-    val end_time: Long,
-    val questions_count: Int,
 )
+
+data class LearningSession(
+        @PrimaryKey(autoGenerate = true) val session_id: Int,
+        val user_id: Int,
+        val start_time: Long,
+        val end_time: Long,
+        val questions_count: Int,
+    )

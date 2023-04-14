@@ -6,14 +6,15 @@ import java.time.LocalDate
 import androidx.room.ForeignKey
 
 @Entity(
-        foreignKeys = [
-                ForeignKey(
-                        entity = User::class,
-                        parentColumns = ["user_id"],
-                        childColumns = ["user_id"],
-                        onDelete = ForeignKey.CASCADE
-                )
-        ]
+    foreignKeys = [
+        ForeignKey(
+            entity = User::class,
+            parentColumns = ["user_id"],
+            childColumns = ["user_id"],
+            onDelete = ForeignKey.CASCADE
+        )
+    ]
+)
 data class Exam(
         @PrimaryKey(autoGenerate = true) val exam_id: Int,
         val user_id: Int,
@@ -22,4 +23,4 @@ data class Exam(
         val exam_time: Long,
         val exam_location: String,
         val exam_score: Int
-)
+    )
