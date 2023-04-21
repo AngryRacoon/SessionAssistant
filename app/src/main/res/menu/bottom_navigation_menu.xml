@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_1"
+        android:enabled="true"
+        android:icon="@drawable/home_fill0_wght400_grad0_opsz48"
+        android:title="Main"/>
+    <item
+        android:id="@+id/item_2"
+        android:enabled="true"
+        android:icon="@drawable/date_range_fill0_wght400_grad0_opsz48"
+        android:title="Calendar" />
+</menu>
