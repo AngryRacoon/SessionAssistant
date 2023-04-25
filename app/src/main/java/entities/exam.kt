@@ -19,7 +19,7 @@ data class Exam(
         @PrimaryKey(autoGenerate = true) val exam_id: Int,
         val user_id: Int,
         val exam_name: String,
-        val exam_date: LocalDate,
+        val exam_date: Long,
         val exam_time: Long,
         val exam_location: String,
         val exam_score: Int
