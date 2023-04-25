@@ -3,10 +3,10 @@
         android:id="@+id/item_1"
         android:enabled="true"
         android:icon="@drawable/home_fill0_wght400_grad0_opsz48"
-        android:title="Main"/>
+        android:title="@string/home"/>
     <item
         android:id="@+id/item_2"
         android:enabled="true"
         android:icon="@drawable/date_range_fill0_wght400_grad0_opsz48"
-        android:title="Calendar" />
+        android:title="@string/calendar" />
 </menu>

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SessionAssistant</string>
+    <string name="title_activity_add_exam">AddExam</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home">Home</string>>
+    <string name="calendar">Calendar</string>
+
 </resources>
