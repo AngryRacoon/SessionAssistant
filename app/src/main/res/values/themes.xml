@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Light Theme -->
     <style name="Theme.SessionAssistant" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="colorPrimary">@color/md_theme_light_primary</item>
@@ -22,14 +22,16 @@
         <item name="colorSurface">@color/md_theme_light_primaryContainer</item>
         <item name="colorOnSurface">@color/md_theme_light_onSurface</item>
         <item name="colorSurfaceVariant">@color/md_theme_light_surfaceVariant</item>
-        <item name="colorOnSurfaceVariant">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_light_outline</item>
         <item name="colorOutline">@color/md_theme_light_outline</item>
         <item name="colorOnSurfaceInverse">@color/md_theme_light_inverseOnSurface</item>
         <item name="colorSurfaceInverse">@color/md_theme_light_inverseSurface</item>
         <item name="colorPrimaryInverse">@color/md_theme_light_inversePrimary</item>
+   </style>
 
-    </style>
-    <style name="CustomShapeOVerlay" parent="">
+
+
+    <style name="CustomShapeOverlay" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSizeTopLeft">10dp</item>
         <item name="cornerSizeTopRight">10dp</item>

@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">SessionAssistant</string>
     <string name="title_activity_add_exam">AddExam</string>
+    <string name="title">Заголовок</string>
+    <string name="secondary_text">Вторичный текст</string>
+    <string name="supporting_text">Поддерживающий текст</string>
     <!-- Strings used for fragments for navigation -->
     <string name="home">Home</string>>
     <string name="calendar">Calendar</string>
+    <string name="add_exam">add exam</string>
 
 </resources>

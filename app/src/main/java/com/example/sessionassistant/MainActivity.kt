@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
-        val button = findViewById<Button>(R.id.iconTonalButton)
+        val button = findViewById<Button>(R.id.filledTonalButton)
         button.setOnClickListener {
             // Обработка нажатия на кнопку
         }
