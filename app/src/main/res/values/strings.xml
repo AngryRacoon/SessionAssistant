@@ -1,12 +1,21 @@
 <resources>
     <string name="app_name">SessionAssistant</string>
     <string name="title_activity_add_exam">AddExam</string>
-    <string name="title">Заголовок</string>
-    <string name="secondary_text">Вторичный текст</string>
+    <string name="today">Заголовок</string>
+    <string name="motivation">Вторичный текст</string>
     <string name="supporting_text">Поддерживающий текст</string>
     <!-- Strings used for fragments for navigation -->
     <string name="home">Home</string>>
     <string name="calendar">Calendar</string>
     <string name="add_exam">add exam</string>
+    <string name="exam_name_hint">Name:</string>
+    <string name="add_exam_title">Add exam</string>
+    <string name="set_date">Date:</string>
+    <string name="set_time">Time:</string>
+    <string name="exam_location_hint">room number:</string>
+    <string name="next">Next</string>
+    <string name="cancel">Cancel</string>
+
+
 
 </resources>

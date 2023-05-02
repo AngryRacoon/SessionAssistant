@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddExamDialogFragment"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="26dp">
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:paddingTop="32dp"
+            android:paddingBottom="32dp"
+            android:text="@string/add_exam_title"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/exam_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_text_view"
+            android:hint="@string/exam_name_hint"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <EditText
+            android:id="@+id/exam_date_edit_text"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exam_name_edit_text"
+            android:layout_marginTop="25dp"
+            android:hint="@string/set_date"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <EditText
+            android:id="@+id/exam_time_edit_text"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exam_name_edit_text"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="32dp"
+            android:layout_toEndOf="@+id/datePickerButton"
+            android:hint="@string/set_time"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <Button
+            android:id="@+id/datePickerButton"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exam_name_edit_text"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@+id/exam_date_edit_text"
+            android:contentDescription="@string/add_exam"
+            app:icon="@drawable/date_range_fill0_wght400_grad0_opsz48"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:shapeAppearanceOverlay="@style/CustomShapeOverlay" />
+
+        <Button
+            android:id="@+id/timePickerButton"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exam_name_edit_text"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/exam_time_edit_text"
+            android:contentDescription="@string/add_exam"
+            app:icon="@drawable/date_range_fill0_wght400_grad0_opsz48"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:shapeAppearanceOverlay="@style/CustomShapeOverlay" />
+
+        <EditText
+            android:id="@+id/exam_location_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exam_date_edit_text"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="32dp"
+            android:hint="@string/exam_location_hint"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <Button
+            android:id="@+id/filledButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="35dp"
+            android:text="@string/next"
+            />
+
+        <Button
+            android:id="@+id/textButton"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="35dp"
+            android:text="@string/cancel"
+            android:textSize="@dimen/text_button"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

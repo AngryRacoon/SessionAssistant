@@ -9,7 +9,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+
+        var badge = bottomNavigationView.getOrCreateBadge(R.id.item_2)
+        badge.isVisible = true
+// An icon only badge will be displayed unless a number or text is set:
+        badge.number = 99  // or badge.text = "New"
         bottomNavigationView.setOnItemSelectedListener { item ->
             when(item.itemId) {
                 R.id.item_1 -> {
@@ -25,7 +31,8 @@ class MainActivity : AppCompatActivity() {
         }
         val button = findViewById<Button>(R.id.filledTonalButton)
         button.setOnClickListener {
-            // Обработка нажатия на кнопку
+            val dialog = AddExamDialogFragment()
+            dialog.show(supportFragmentManager, "AddExamDialogFragment")
         }
     }
 }
