@@ -73,7 +73,7 @@
             android:contentDescription="@string/add_exam"
             app:icon="@drawable/date_range_fill0_wght400_grad0_opsz48"
             app:layout_constraintEnd_toEndOf="parent"
-            app:shapeAppearanceOverlay="@style/CustomShapeOverlay" />
+             />
 
         <Button
             android:id="@+id/timePickerButton"
@@ -87,7 +87,7 @@
             android:contentDescription="@string/add_exam"
             app:icon="@drawable/date_range_fill0_wght400_grad0_opsz48"
             app:layout_constraintEnd_toEndOf="parent"
-            app:shapeAppearanceOverlay="@style/CustomShapeOverlay" />
+            />
 
         <EditText
             android:id="@+id/exam_location_edit_text"
